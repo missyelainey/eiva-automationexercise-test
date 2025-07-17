@@ -1,0 +1,5 @@
+# Core dependencies
+selenium==4.16.0        # Web automation library
+pytest==7.4.4           # Test runner and framework
+webdriver-manager==4.0.1  # Manages browser drivers automatically
+
