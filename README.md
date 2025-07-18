@@ -37,35 +37,65 @@ eiva-automationexercise-tests/
 
 ## Test Scenarios Covered
 
-| Module                                  | Test Case ID | Test Description                                                              |
-|-----------------------------------------|--------------|-------------------------------------------------------------------------------|
-| USER REGISTRATION & AUTHENTICATION      | AE-TC01      | Verify if the user can register and login successfully.                       |
-| PRODUCT DISCOVERY & CART OPERATIONS     | AE-TC02      | Verify if a user can search for a product and add it to the cart.             |
-| BRAND NAVIGATION & FILTERING            | AE-TC03      | Verify if brand-specific products can be viewed and added to cart.            |
-| CART ITEM MANAGEMENT                    | AE-TC04      | Verify if a user can remove a product from the shopping cart.                 |
-| CHECKOUT PROCESS WITH USER REGISTRATION | AE-TC05      | Verify if a user can register during checkout and place an order.             |
+| Module                                  | Test Scenario ID | Test Scenario                                                             |
+|-----------------------------------------|------------------|---------------------------------------------------------------------------|
+| USER REGISTRATION & AUTHENTICATION      | AE-TC01          | Verify if the user can register and login successfully.                   |
+| PRODUCT DISCOVERY & CART OPERATIONS     | AE-TC02          | Verify if a user can search for a product and add it to the cart.         |
+| BRAND NAVIGATION & FILTERING            | AE-TC03          | Verify if brand-specific products can be viewed and added to cart.        |
+| CART ITEM MANAGEMENT                    | AE-TC04          | Verify if a user can remove a product from the shopping cart.             |
+| CHECKOUT PROCESS WITH USER REGISTRATION | AE-TC05          | Verify if a user can register during checkout and place an order.         |
 
 ---
 
-## Setup Instructions
+## How to Set Up and Run the Tests
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-username/eiva_automation_task.git
-   cd eiva_automation_task
+### 1. Open Command Prompt (cmd)
 
-2. **Create Virtual Environment**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # On Windows
+You can do this by:
+- Pressing `Win + R`, typing `cmd`, and hitting `Enter`
+- Or searching for "Command Prompt" in the Start Menu
 
-3. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
+### 2. Clone the Repository
 
-4. **Run Tests**
-   ```bash
-   pytest tests/
+```bash
+git clone https://github.com/missyelainey/eiva-automationexercise-test.git
+```
+
+### 3. Navigate into the Project Directory
+
+```bash
+cd eiva-automationexercise-test
+```
+
+### 4. Create a Virtual Environment (Optional but Recommended)
+
+```bash
+python -m venv venv
+```
+
+### 5. Activate the Virtual Environment
+
+On **Windows**:
+```bash
+venv\Scripts\activate
+```
+
+On **macOS/Linux**:
+```bash
+source venv/bin/activate
+```
+
+### 6. Install the Required Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 7. Run the Tests
+
+```bash
+pytest
+```
 
 ---
 
@@ -87,3 +117,7 @@ eiva-automationexercise-tests/
 ## Notes
 - Ensure ChromeDriver is compatible with your installed Chrome version.
 - Adjust timeouts and selectors if the site changes structure.
+
+---
+
+*Submitted as part of EIVA technical task. Feel free to reach out if clarification is needed.*
